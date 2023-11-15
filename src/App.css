@@ -1,0 +1,16 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+.todo-list{
+
+  z-index: 10;
+}
+#footer {
+  position:relative;
+    top:40vh;
+  width:100%;
+  background-color: black;
+  color:white;
+}

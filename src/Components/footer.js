@@ -8,7 +8,7 @@ export default function Footer()
         <>
         <footer>
           <div id="footer">
-            get in touch
+           SIMPLY LEARN IT !!!
           </div>
         </footer>
     

@@ -11,7 +11,10 @@ export default function AddTodo({addTodo}) {
         {
             alert("title no defined ")
         }
-        addTodo(title,desc)
+        else
+       { addTodo(title,desc);
+        settitle("");
+        setdesc("");}
 
     }
     return (
@@ -20,12 +23,12 @@ export default function AddTodo({addTodo}) {
             <form class="container" onSubmit={submit}>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Todo name </label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" value={title} onChange={(e)=>{settitle(e.target.value)}}aria-describedby="emailHelp" placeholder="Enter email" />
+                    <input type="text" class="form-control" id="exampleInputEmail1" value={title} onChange={(e)=>{settitle(e.target.value)}}aria-describedby="emailHelp" placeholder="Enter Todo title" />
 
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="text" class="form-control" value={desc} id="exampleInputPassword1" onChange={(e) => { setdesc(e.target.value) }} placeholder="Description" />
+                    <label for="exampleInputPassword1">Description</label>
+                    <input type="text" class="form-control" value={desc} id="exampleInputPassword1" onChange={(e) => { setdesc(e.target.value) }} placeholder=" Enter Description" />
                 </div>
                 <div class="form-check">
 
